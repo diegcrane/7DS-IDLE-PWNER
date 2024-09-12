@@ -1,6 +1,6 @@
 ## Emulator: BlueStacks
 
-Ensure you have **BlueStacks** installed on your machine. Below are the required configurations for smooth gameplay and performance optimization.
+Ensure you have **BlueStacks** installed on your machine.
 
 ### BlueStacks Settings:
 
