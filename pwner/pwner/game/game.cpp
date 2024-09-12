@@ -273,6 +273,9 @@ auto game::run_scan() -> void
 				SetCursorPos(slot.position.x, slot.position.y);
 
 				mouse_event(0x0002, slot.position.x, slot.position.y, 0, 0);
+
+				Sleep(get_random_value(50.f, 100.f));
+
 				mouse_event(0x0004, slot.position.x, slot.position.y, 0, 0);
 
 				SetCursorPos(cursor_pos.x, cursor_pos.y);
