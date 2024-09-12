@@ -106,11 +106,22 @@ auto game::run_scan() -> void
 		std::cout << std::endl;
 	}
 
+	auto get_random_value = [](float min, float max) -> float
+	{
+		std::random_device random_device;
+
+		std::mt19937 mt_19937(random_device());
+
+		return std::uniform_real_distribution<>(min, max)(mt_19937);
+	};
+
+	auto scan_direction_x = get_random_value(0.f, 100.f) > 50.f, scan_direction_y = get_random_value(0.f, 100.f) > 50.f;
+
 	auto stop_search_complete = false;
 
-	for (auto x = 0.f; x < 8.f && !stop_search_complete; ++x)
+	for (auto x = (scan_direction_x ? 0.f : 7.f); (scan_direction_x ? x < 8.f : x >= 0.f) && !stop_search_complete; (scan_direction_x ? ++x : --x))
 	{
-		for (auto y = 0.f; y < 10.f && !stop_search_complete; ++y)
+		for (auto y = (scan_direction_y ? 0.f : 9.f); (scan_direction_y ? y < 10.f : y >= 0.f) && !stop_search_complete; (scan_direction_y ? ++y : --y))
 		{
 			auto slot = game::get_slot_from_grid({ x, y });
 
@@ -272,7 +283,7 @@ auto game::run_scan() -> void
 	}
 
 	if (stop_search_complete)
-		Sleep(500);
+		Sleep(get_random_value(250.f, 500.f));
 
 	screen::release();
 }
