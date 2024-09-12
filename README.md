@@ -6,7 +6,7 @@
 ### Emulator Settings:
 
 1. **Window Title**:  
-   Set to `BlueStacks App Player` (Default).
+   - Set to `BlueStacks App Player` (Default).
 
 2. **Android Resolution**:  
    - Width: `900 px`
