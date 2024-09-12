@@ -1,6 +1,7 @@
 ## LOVE U NETMARBLE
 
 ### Emulator: BlueStacks
+1. **BlueStacks**:  
 
 ### BlueStacks Settings:
 
