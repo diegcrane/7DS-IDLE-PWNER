@@ -2,12 +2,10 @@
 
 ### Emulator: BlueStacks
 
-Ensure you have **BlueStacks** installed on your machine.
-
 ### BlueStacks Settings:
 
 1. **Window Title**:  
-   Set to `BlueStacks App Player`.
+   Set to `BlueStacks App Player` (Default).
 
 2. **Android Resolution**:  
    - Width: `900 px`
