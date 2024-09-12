@@ -1,4 +1,4 @@
-## RAAAAAAAAAAAHHHHHH I LOVE U NETMARBLE
+## LOVE U NETMARBLE
 
 ### Emulator: BlueStacks
 
