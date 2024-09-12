@@ -3,7 +3,7 @@
 ### Emulator:
 1. **BlueStacks**:  
 
-### BlueStacks Settings:
+### Emulator Settings:
 
 1. **Window Title**:  
    Set to `BlueStacks App Player` (Default).
