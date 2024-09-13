@@ -1,12 +1,14 @@
 ## LOVE U NETMARBLE
 
-### Emulator:
-1. **BlueStacks**
+### Windows Settings:
 
-### Emulator Settings:
+1. **Screen Scaling**:
+   - Set to `100%`
+
+### BlueStacks Settings:
 
 1. **Window Title**:
-   - Set to `BlueStacks App Player` (Default).
+   - Set to `BlueStacks App Player` (Default)
 
 2. **Android Resolution**:
    - Width: `900 px`
@@ -17,9 +19,9 @@
    - **Frame Rate**: `240 FPS`
 
 4. **Minimized Sidebar**:
-   - The BlueStacks sidebar must be minimized for correct calculations.
+   - BlueStacks sidebar must be minimized for correct calculations.
 
 ### In-game Settings for 7 Deadly Sins (7DS):
 
 1. **Frame Rate**:
-   - Set the **Frame Rate** to `High` in the game settings for a smoother experience.
+   - Set to `High` for correct calculations.
