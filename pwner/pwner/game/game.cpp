@@ -266,19 +266,16 @@ auto game::run_scan() -> void
 
 			if (should_click_slot_simple() || should_click_slot_advanced())
 			{
-				auto cursor_pos = tagPOINT();
+				auto click_position_x = slot.position.x + get_random_value(-slot.size_x * .3f + 1.f, slot.size_x * .3f - 1.f);
+				auto click_position_y = slot.position.y + get_random_value(-slot.size_y * .3f + 1.f, slot.size_y * .3f - 1.f);
 
-				GetCursorPos(&cursor_pos);
+				SetCursorPos(click_position_x, click_position_y);
 
-				SetCursorPos(slot.position.x, slot.position.y);
-
-				mouse_event(0x0002, slot.position.x, slot.position.y, 0, 0);
+				mouse_event(0x0002, click_position_x, click_position_y, 0, 0);
 
 				Sleep(get_random_value(50.f, 100.f));
 
-				mouse_event(0x0004, slot.position.x, slot.position.y, 0, 0);
-
-				SetCursorPos(cursor_pos.x, cursor_pos.y);
+				mouse_event(0x0004, click_position_x, click_position_y, 0, 0);
 
 				stop_search_complete = true;
 			}
